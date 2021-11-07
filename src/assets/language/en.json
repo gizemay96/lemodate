@@ -1,0 +1,5 @@
+{
+    "greeting" : " Welcome !! ",
+    "name" : " Welcome {{ name }}"
+
+}
