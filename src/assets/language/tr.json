@@ -1,4 +1,7 @@
 {
-    "greeting" : " Hoşgeldin !! ",
-    "name" : " Hoşgeldin {{ name }}"
+    "navbar": {
+        "about": "Hakkımızda",
+        "subscriptions": "Üyelikler",
+        "support": "Destek"
+    }
 }

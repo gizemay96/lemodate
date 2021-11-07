@@ -14,6 +14,8 @@ export class AppComponent {
 
     if (lang) {
       this.translate.use(lang)
+    } else {
+      window.localStorage.setItem('lang' , 'tr')
     }
 
   }

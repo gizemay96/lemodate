@@ -1,1 +1,41 @@
-<h1>home</h1>
+<section class="section-black">
+     <!-- Navbar -->
+     <nav class="navbar">
+          <div class="container-fluid d-flex align-items-center justify-content-between">
+               <div class="logo">
+                    <a class="navbar-brand" href="">
+                         <img src="../../../assets/images/logo-text.png" class="d-inline-block align-text-top">
+                    </a>
+               </div>
+               <div class="nav-links d-flex">
+                    <a class="nav-link">
+                         {{'navbar.about' | translate}}
+                    </a>
+                    <a class="nav-link">
+                         {{'navbar.subscriptions' | translate}}
+                    </a>
+                    <a class="nav-link">
+                         {{'navbar.support' | translate}}
+                    </a>
+                    <div class="row">
+                         <div class="col">
+                           <div ngbDropdown class="d-inline-block" placement="left">
+                             <a class="nav-link d-flex align-items-center" id="language" ngbDropdownToggle>
+                               <img class="nav-icon" src="../../../assets/icons/lang.svg" alt="">  
+                                <span>{{language | uppercase }}</span>
+                              </a>
+                             <div ngbDropdownMenu aria-labelledby="language">
+                               <a [ngClass]="{'selected': language === 'tr'}" class="nav-link" ngbDropdownItem (click)="changeLanguage('tr')">TR</a>
+                               <a [ngClass]="{'selected': language === 'en'}" class="nav-link" ngbDropdownItem (click)="changeLanguage('en')">EN</a>
+                             </div>
+                           </div>
+                         </div>
+                       </div>
+               </div>
+          </div>
+     </nav>
+
+     <div class="d-flex justify-content-center">
+          <img class="logo-lg" src="../../../assets/images/logo2.png" alt="">
+     </div>
+</section>
