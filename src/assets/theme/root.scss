@@ -1,28 +1,42 @@
 body {
   margin: 0;
   padding: 0;
-}
-
-h1 {
-  font-size: 10vw;
-  color: #ffffff;
-  padding-left: 7vw;
-  margin-bottom: 0;
-}
-
-h3 {
-  margin-top: 0;
-  padding-left: 7vw;
-  color: #ffffff;
+  background-color: $bg-color-yellow;
 }
 
 section {
-  height: 100vh;
-  padding: 0px 25px;
+  height: 100%;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
 }
 
-.section-black {
+.home-section {
+  min-height: 100vh;
+}
+
+.substring-section {
+  min-height: 100vh;
+}
+
+.bg-black {
   background-color: $bg-color-black;
+}
+
+.bg-green {
+  background-color: $bg-green;
+}
+
+.bg-yellow {
+  background-color: $bg-color-yellow;
+}
+
+.bg-light-yellow {
+  background-color: $bg-light-yellow;
+}
+
+.bg-light-green {
+  background-color: $bg-light-green;
 }
 
 .navbar {
@@ -43,13 +57,24 @@ section {
     margin-right: 5px;
   }
 
+  img {
+    max-width: 250px;
+
+    @media screen and (max-width: 425px) {
+      max-width: 170px;
+    }
+
+  }
+
 }
 
-.logo-lg {
-  width: 100%;
-  max-width: 439px;
-  height: auto;
-  margin-top: 90px;
+.logo-case {
+
+  img {
+    max-width: 420px;
+  }
+
+
 }
 
 .dropdown-menu {
@@ -65,10 +90,117 @@ section {
       color: white;
     }
 
-    &.selected{
+    &.selected {
       background-color: $btn-seccess;
       color: white;
     }
   }
 
+}
+
+h1 {
+  font-family: Poppins;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 72px;
+  letter-spacing: 0em;
+}
+
+.presentation {
+  img {
+    max-height: 739px;
+  }
+
+}
+
+.text {
+  color: black;
+  padding-top: 100px;
+
+  h3 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 60px;
+    max-width: 500px;
+  }
+}
+
+img {
+  max-width: 383px;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: visible;
+}
+
+.container {
+  max-width: 1286px !important;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+
+.circle {
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  color: aliceblue;
+  background: black;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+  font-size: 35px;
+}
+
+.card-deck{
+}
+
+.card {
+  margin-left: 30px !important;
+  margin-right: 30px !important;
+  border-radius: 25px;
+  background-color: transparent;
+  color: black;
+  max-width: 370px;
+
+  .title {
+    h2 {
+      font-style: normal;
+      font-weight: 900;
+      font-size: 24px;
+      line-height: 60px;
+    }
+  }
+
+  .card-body {
+    height: 370px;
+    border-radius: 25px;
+  }
+
+  img {
+    top: -35px;
+    z-index: 5;
+    position: inherit;
+  }
+
+  .card-footer {
+    top: -60px;
+    position: inherit;
+    border-radius: 25px;
+    padding: 25px 0;
+  }
+
+  .content {
+    ul {
+      li {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 25px;
+      }
+    }
+  }
 }
