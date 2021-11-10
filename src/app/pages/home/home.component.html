@@ -1,181 +1,200 @@
-<section class="bg-black home-section">
-     <nav class="navbar navbar-expand-lg">
-          <a class="navbar-brand" href="">
-               <img src="../../../assets/images/logo-text.png" class="d-inline-block align-text-top">
-          </a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-               aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-               <i style="color: 'white';" class="fas fa-adjust"></i>
-          </button>
+<ao-fullpage *ngIf="sections" [sections]="sections" (sectionChange)="sectionChange($event)" [lockScrolling]="closeScrolling">
+  <section class="fullpage-section bg-black" [id]="sections[0].url">
+    <app-section [section]="sections[0]">
+      <nav class="navbar navbar-expand-lg">
+        <a class="navbar-brand" href="">
+          <img src="../../../assets/images/logo-text.png" class="d-inline-block align-text-top">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <i style="color: 'white';" class="fas fa-adjust"></i>
+        </button>
 
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-               <ul class="navbar-nav ml-auto">
-                    <li class="nav-item nav-link active">
-                         <a class="nav-link" href="#"> {{'navbar.about' | translate}} <span
-                                   class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item nav-link">
-                         <a class="nav-link" href="#">{{'navbar.subscriptions' | translate}}</a>
-                    </li>
-                    <li class="nav-item nav-link">
-                         <a class="nav-link" href="#"> {{'navbar.support' | translate}}</a>
-                    </li>
-                    <li class="nav-item nav-link">
-                         <div class="row">
-                              <div class="col">
-                                   <div ngbDropdown class="d-inline-block" placement="left">
-                                        <a class="nav-link d-flex align-items-center" id="language" ngbDropdownToggle>
-                                             <img class="nav-icon" src="../../../assets/icons/lang.svg" alt="">
-                                             <span>{{language | uppercase }}</span>
-                                        </a>
-                                        <div ngbDropdownMenu aria-labelledby="language">
-                                             <a [ngClass]="{'selected': language === 'tr'}" class="nav-link"
-                                                  ngbDropdownItem (click)="changeLanguage('tr')">TR</a>
-                                             <a [ngClass]="{'selected': language === 'en'}" class="nav-link"
-                                                  ngbDropdownItem (click)="changeLanguage('en')">EN</a>
-                                        </div>
-                                   </div>
-                              </div>
-                         </div>
-                    </li>
-               </ul>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item nav-link active">
+              <a class="nav-link" href="#"> {{'navbar.about' | translate}} <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item nav-link">
+              <a class="nav-link" href="#">{{'navbar.subscriptions' | translate}}</a>
+            </li>
+            <li class="nav-item nav-link">
+              <a class="nav-link" href="#"> {{'navbar.support' | translate}}</a>
+            </li>
+            <li class="nav-item nav-link">
+              <div class="row">
+                <div class="col">
+                  <div ngbDropdown class="d-inline-block" placement="left">
+                    <a class="nav-link d-flex align-items-center" id="language" ngbDropdownToggle>
+                      <img class="nav-icon" src="../../../assets/icons/lang.svg" alt="">
+                      <span>{{language | uppercase }}</span>
+                    </a>
+                    <div ngbDropdownMenu aria-labelledby="language">
+                      <a [ngClass]="{'selected': language === 'tr'}" class="nav-link" ngbDropdownItem
+                        (click)="changeLanguage('tr')">TR</a>
+                      <a [ngClass]="{'selected': language === 'en'}" class="nav-link" ngbDropdownItem
+                        (click)="changeLanguage('en')">EN</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
 
+        </div>
+      </nav>
+
+      <div class="d-flex justify-content-center logo-case col-12">
+        <img class="logo-lg" src="../../../assets/images/logo3.png" alt="">
+      </div>
+    </app-section>
+  </section>
+
+
+  <section class="fullpage-section bg-yellow" [id]="sections[1].url">
+    <app-section [section]="sections[1]">
+      <div class="container view-container">
+        <div class="row">
+          <div class="text col-lg-6 d-flex align-items-top text-left">
+            <div class="div">
+              <div class="circle mt-1 mr-4">1</div>
+            </div>
+            <div class="">
+              <h1>Mükemmel Eşleşme</h1>
+              <h3>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</h3>
+            </div>
           </div>
-     </nav>
-
-     <div class="d-flex justify-content-center logo-case col-12">
-          <img class="logo-lg" src="../../../assets/images/logo3.png" alt="">
-     </div>
-</section>
-
-
-<section class="bg-yellow d-flex">
-     <div class="container view-container">
-          <div class="row">
-               <div class="text col-lg-6 d-flex align-items-top text-left">
-                    <div class="div">
-                         <div class="circle mt-1 mr-4">1</div>
-                    </div>
-                    <div class="">
-                         <h1>Mükemmel Eşleşme</h1>
-                         <h3>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</h3>
-                    </div>
-               </div>
-               <div class="img col-lg-6 text-right">
-                    <img src="../../../assets/images/Rectangle.png" alt="">
-               </div>
+          <div class="img col-lg-6 text-right">
+            <img src="../../../assets/images/Rectangle.png" alt="">
           </div>
-     </div>
-</section>
+        </div>
+      </div>
+    </app-section>
+  </section>
 
-<section class="bg-yellow d-flex">
-     <div class="container view-container">
-          <div class="row">
-               <div class="img col-lg-4 text-left">
-                    <img src="../../../assets/images/Rectangle (1).png" alt="">
-               </div>
-               <div class="text col-lg-8 d-flex align-items-top text-left mt-5">
-                    <div class="div">
-                         <div class="circle mt-1 mr-4">2</div>
-                    </div>
-                    <div class="">
-                         <h1>Görüntülü Konuşma Özelliği</h1>
-                         <h3>It is a long established fact that a reader will be distracted by the readable content.
-                         </h3>
-                    </div>
-               </div>
+  <!-- - -->
+
+  <section class="fullpage-section bg-yellow" [id]="sections[2].url">
+    <app-section [section]="sections[2]">
+      <div class="container view-container">
+        <div class="row">
+          <div class="img col-lg-4 text-left">
+            <img src="../../../assets/images/Rectangle (1).png" alt="">
           </div>
-     </div>
-</section>
-
-<section class="bg-yellow d-flex">
-     <div class="container view-container">
-          <div class="row">
-               <div class="text col-lg-6 d-flex align-items-top text-left">
-                    <div class="div">
-                         <div class="circle mt-1 mr-4">3</div>
-                    </div>
-                    <div class="">
-                         <h1>Lorem Ipsum </h1>
-                         <h3>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</h3>
-                    </div>
-               </div>
-               <div class="img col-lg-6 text-right">
-                    <img style="border-radius: 25px;" src="../../../assets/images/Rectangle (2).png" alt="">
-               </div>
+          <div class="text col-lg-8 d-flex align-items-top text-left mt-5">
+            <div class="div">
+              <div class="circle mt-1 mr-4">2</div>
+            </div>
+            <div class="">
+              <h1>Görüntülü Konuşma Özelliği</h1>
+              <h3>It is a long established fact that a reader will be distracted by the readable content.
+              </h3>
+            </div>
           </div>
-     </div>
-</section>
+        </div>
+      </div>
+    </app-section>
+  </section>
 
-<section class="bg-black substring-section">
-     <div class="container">
-          <div class="card-deck">
+  <!--  -->
 
-               <div class="card ">
-                    <div class="card-body bg-light-yellow">
-                         <div class="title">
-                              <h2 class="card-title text-center">Standart Üyelik</h2>
-                              <h5 class="card-title text-center">( Ücretsiz )</h5>
-                         </div>
-                         <div class="content p-4 pt-5">
-                              <ul>
-                                   <li>Anlık sohbete geçmeden önce en az 2 soru yanıtlaman gerekir.</li>
-                              </ul>
-                         </div>
-                    </div>
-                    <img src="../../../assets/images/circle_logo.png" alt="">
-                    <div class="card-footer bg-light-yellow">
-                         <h2 class="card-title text-center">Standart Üyelik</h2>
-                         <h5 class="card-title text-center">( Ücretsiz )</h5>
-                    </div>
-               </div>
-
-               <div class="card ">
-                    <div class="card-body bg-light-green">
-                         <div class="title">
-                              <h2 class="card-title text-center">Gelişmiş Üyelik</h2>
-                         </div>
-                         <div class="content p-2 pt-1">
-                              <ul>
-                                   <li>Fotoğrafların chat ekranı açılmadan gösterilecek şekilde ayarlanabilir.</li>
-                              </ul>
-                              <ul>
-                                   <li>Sesli görüşme seçeneği aktif edilir.</li>
-                              </ul>
-                              <ul>
-                                   <li>Soruları geç, chat'e geçelim talebi gönderme.</li>
-                              </ul>
-                              <ul>
-                                   <li>Görünmez moduna geçilebilir.</li>
-                              </ul>
-                         </div>
-                    </div>
-                    <img src="../../../assets/images/circle_logo.png" alt="">
-                    <div class="card-footer bg-light-green">
-                         <h2 class="card-title text-center">Standart Üyelik</h2>
-                         <h5 class="card-title text-center">( Ücretsiz )</h5>
-                    </div>
-               </div>
-
-               <div class="card ">
-                    <div class="card-body bg-green">
-                         <div class="title">
-                              <h2 class="card-title text-center">Standart Üyelik</h2>
-                              <h5 class="card-title text-center">( Ücretsiz )</h5>
-                         </div>
-                         <div class="content p-4 pt-5">
-                              <ul>
-                                   <li>Anlık sohbete geçmeden önce en az 2 soru yanıtlaman gerekir.</li>
-                              </ul>
-                         </div>
-                    </div>
-                    <img src="../../../assets/images/circle_logo.png" alt="">
-                    <div class="card-footer bg-green">
-                         <h2 class="card-title text-center">Standart Üyelik</h2>
-                         <h5 class="card-title text-center">( Ücretsiz )</h5>
-                    </div>
-               </div>
-
+  <section class="fullpage-section-fit-content" [id]="sections[3].url">
+    <app-section [section]="sections[3]">
+      <div class="container view-container">
+        <div class="row">
+          <div class="text col-lg-6 d-flex align-items-top text-left">
+            <div class="div">
+              <div class="circle mt-1 mr-4">3</div>
+            </div>
+            <div class="">
+              <h1>Lorem Ipsum </h1>
+              <h3>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</h3>
+            </div>
           </div>
-     </div>
-</section>
+          <div class="img col-lg-6 text-right">
+            <img style="border-radius: 25px;" src="../../../assets/images/Rectangle (2).png" alt="">
+          </div>
+        </div>
+      </div>
+      <!-- <a [routerLink]="'/'">Back to top</a> -->
+    </app-section>
+  </section>
+
+
+  <section class="fullpage-section-fit-content bg-black" [id]="sections[4].url">
+    <app-section [section]="sections[4]">
+      <div class="container">
+        <div class="card-deck">
+
+          <div class="card ">
+            <div class="card-body bg-light-yellow">
+              <div class="title">
+                <h2 class="card-title text-center">Standart Üyelik</h2>
+                <h5 class="card-title text-center">( Ücretsiz )</h5>
+              </div>
+              <div class="content p-4 pt-5">
+                <ul>
+                  <li>Anlık sohbete geçmeden önce en az 2 soru yanıtlaman gerekir.</li>
+                </ul>
+              </div>
+            </div>
+            <img src="../../../assets/images/circle_logo.png" alt="">
+            <div class="card-footer bg-light-yellow">
+              <h2 class="card-title text-center">Standart Üyelik</h2>
+              <h5 class="card-title text-center">( Ücretsiz )</h5>
+            </div>
+          </div>
+
+          <div class="card ">
+            <div class="card-body bg-light-green">
+              <div class="title">
+                <h2 class="card-title text-center">Gelişmiş Üyelik</h2>
+              </div>
+              <div class="content p-2 pt-1">
+                <ul>
+                  <li>Fotoğrafların chat ekranı açılmadan gösterilecek şekilde ayarlanabilir.</li>
+                </ul>
+                <ul>
+                  <li>Sesli görüşme seçeneği aktif edilir.</li>
+                </ul>
+                <ul>
+                  <li>Soruları geç, chat'e geçelim talebi gönderme.</li>
+                </ul>
+                <ul>
+                  <li>Görünmez moduna geçilebilir.</li>
+                </ul>
+              </div>
+            </div>
+            <img src="../../../assets/images/circle_logo.png" alt="">
+            <div class="card-footer bg-light-green">
+              <h2 class="card-title text-center">Standart Üyelik</h2>
+              <h5 class="card-title text-center">( Ücretsiz )</h5>
+            </div>
+          </div>
+
+          <div class="card ">
+            <div class="card-body bg-green">
+              <div class="title">
+                <h2 class="card-title text-center">Standart Üyelik</h2>
+                <h5 class="card-title text-center">( Ücretsiz )</h5>
+              </div>
+              <div class="content p-4 pt-5">
+                <ul>
+                  <li>Anlık sohbete geçmeden önce en az 2 soru yanıtlaman gerekir.</li>
+                </ul>
+              </div>
+            </div>
+            <img src="../../../assets/images/circle_logo.png" alt="">
+            <div class="card-footer bg-green">
+              <h2 class="card-title text-center">Standart Üyelik</h2>
+              <h5 class="card-title text-center">( Ücretsiz )</h5>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <!-- <a [routerLink]="'/'">Back to top</a> -->
+    </app-section>
+  </section>
+
+</ao-fullpage>
