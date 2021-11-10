@@ -1,6 +1,5 @@
 import { Component, HostListener, OnInit } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
-import { SectionModel } from '@aotearoan/angular-fullpage';
 
 @Component({
   selector: 'app-home',
@@ -8,15 +7,7 @@ import { SectionModel } from '@aotearoan/angular-fullpage';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
-  sections: SectionModel[] = [
-    { url: 'home', active: false, pageTop: true },
-    { url: 'about', active: false },
-    { url: 'about/2', active: false },
-    { url: 'about/3', active: false },
-    { url: 'subscription', active: false },
-  ];
   language;
-  closeScrolling = false;
 
   constructor(private translate: TranslateService) {
   }
@@ -32,11 +23,5 @@ export class HomeComponent implements OnInit {
     this.language = lang;
   }
 
-  public sectionChange(url: string) {
-    this.closeScrolling = true;
-    setTimeout(() => {
-      this.closeScrolling = false;
-    }, 700);
-  }
 
 }
