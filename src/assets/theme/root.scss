@@ -4,20 +4,6 @@ body {
   background-color: $bg-color-yellow;
 }
 
-section {
-  height: 100%;
-  width: 100%;
-  margin-right: auto;
-  margin-left: auto;
-}
-
-.home-section {
-  min-height: 100vh;
-}
-
-.substring-section {
-  min-height: 100vh;
-}
 
 .bg-black {
   background-color: $bg-color-black;
@@ -58,7 +44,7 @@ section {
   }
 
   img {
-    max-width: 250px;
+    max-height: 400px;
 
     @media screen and (max-width: 425px) {
       max-width: 170px;
@@ -148,19 +134,13 @@ h1 {
   }
 
   img {
-    max-height: 480px;
-  }
-
-  .logo-case {
-    img {
-      max-width: 250px !important;
-    }
+    max-height: 480px !important;
   }
 }
 
 img {
-  max-width: 383px;
-  height: auto;
+  width: auto;
+  max-height: 100vh;
   margin-left: auto;
   margin-right: auto;
   overflow: visible;

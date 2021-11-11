@@ -10,6 +10,7 @@ import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { HomeComponent } from './pages/home/home.component';
 import { NgbDropdownModule, NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { FullpageModule } from '@aotearoan/angular-fullpage';
 
 export function HttpLoader(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/language/', '.json')
@@ -26,6 +27,7 @@ export function HttpLoader(http: HttpClient) {
     HttpClientModule,
     NgbModule,
     NgbDropdownModule,
+    FullpageModule,
     TranslateModule.forRoot({
       defaultLanguage: 'en',
       loader: {
