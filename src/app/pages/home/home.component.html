@@ -1,6 +1,6 @@
 <ao-fullpage *ngIf="sections" [sections]="sections" (sectionChange)="sectionChange($event)"
      [lockScrolling]="closeScrolling">
-     <section class="fullpage-section bg-black" [id]="sections[0].url">
+     <section class="fullpage-section bg-liq" [id]="sections[0].url">
           <app-section [section]="sections[0]">
                <nav class="navbar navbar-expand-lg">
                     <a class="navbar-brand" href="">
@@ -49,14 +49,17 @@
                     </div>
                </nav>
 
-               <div class="d-flex justify-content-center logo-case col-12">
-                    <img class="logo-lg" src="../../../assets/images/logo3.png" alt="">
+               <div class="d-flex justify-content-center logo-case col-12 mt-5 ml-5">
+                    <div class="col-lg-7 comp">EKŞİ dENEYİM</div>
+                    <div class="col-lg-5 mt-5 logo d-flex justify-content-center">
+                         <img class="logo-lg" src="../../../assets/images/logo3.png" alt="">
+                    </div>
                </div>
           </app-section>
      </section>
 
 
-     <section class="fullpage-section bg-yellow" [id]="sections[1].url">
+     <section class="fullpage-section bg-yellow bg-line" [id]="sections[1].url">
           <app-section [section]="sections[1]">
                <div class="container pt-0 pb-0">
                     <div class="row">
@@ -79,7 +82,7 @@
 
      <!-- - -->
 
-     <section class="fullpage-section bg-yellow" [id]="sections[2].url">
+     <section class="fullpage-section bg-yellow bg-line" [id]="sections[2].url">
           <app-section [section]="sections[2]">
                <div class="container pt-0 pb-0">
                     <div class="row reversed">
@@ -105,7 +108,7 @@
 
      <!--  -->
 
-     <section class="fullpage-section" [id]="sections[3].url">
+     <section class="fullpage-section bg-line" [id]="sections[3].url">
           <app-section [section]="sections[3]">
                <div class="container pt-0 pb-0">
                     <div class="row">
@@ -135,7 +138,7 @@
                     <div class="card-deck">
 
                          <div class="card ">
-                              <div class="card-body bg-light-yellow">
+                              <div class="card-body bg-light-yellow cardUpAnime">
                                    <div class="title">
                                         <h2 class="card-title text-center">Standart Üyelik</h2>
                                         <h5 class="card-title text-center">( Ücretsiz )</h5>
@@ -146,15 +149,17 @@
                                         </ul>
                                    </div>
                               </div>
-                              <img src="../../../assets/images/circle_logo.png" alt="">
-                              <div class="card-footer bg-light-yellow">
-                                   <h2 class="card-title text-center">Standart Üyelik</h2>
-                                   <h5 class="card-title text-center">( Ücretsiz )</h5>
+                              <div class="openAnimation text-center">
+                                   <img class="cardLogoAnim" src="../../../assets/images/circle_logo.png" alt="">
+                                   <div class="card-footer bg-light-yellow">
+                                        <h2 class="card-title text-center">Standart Üyelik</h2>
+                                        <h5 class="card-title text-center">( Ücretsiz )</h5>
+                                   </div>
                               </div>
                          </div>
 
                          <div class="card ">
-                              <div class="card-body bg-light-green">
+                              <div class="card-body bg-light-green cardUpAnime">
                                    <div class="title">
                                         <h2 class="card-title text-center">Gelişmiş Üyelik</h2>
                                    </div>
@@ -174,18 +179,18 @@
                                         </ul>
                                    </div>
                               </div>
-                              <img src="../../../assets/images/circle_logo.png" alt="">
-                              <div class="card-footer bg-light-green">
-                                   <h2 class="card-title text-center">Standart Üyelik</h2>
-                                   <h5 class="card-title text-center">( Ücretsiz )</h5>
+                              <div class="openAnimation text-center">
+                                   <img class="cardLogoAnim" src="../../../assets/images/circle_logo.png" alt="">
+                                   <div class="card-footer bg-light-green">
+                                        <h2 class="card-title text-center">Gelişmiş Üyelik</h2>
+                                   </div>
                               </div>
                          </div>
 
                          <div class="card ">
-                              <div class="card-body bg-green">
+                              <div class="card-body bg-green cardUpAnime">
                                    <div class="title">
-                                        <h2 class="card-title text-center">Standart Üyelik</h2>
-                                        <h5 class="card-title text-center">( Ücretsiz )</h5>
+                                        <h2 class="card-title text-center">Aşırı Gelişmiş Üyelik</h2>
                                    </div>
                                    <div class="content p-4 pt-5">
                                         <ul>
@@ -193,10 +198,11 @@
                                         </ul>
                                    </div>
                               </div>
-                              <img src="../../../assets/images/circle_logo.png" alt="">
-                              <div class="card-footer bg-green">
-                                   <h2 class="card-title text-center">Standart Üyelik</h2>
-                                   <h5 class="card-title text-center">( Ücretsiz )</h5>
+                              <div class="openAnimation text-center">
+                                   <img class="cardLogoAnim" src="../../../assets/images/circle_logo.png" alt="">
+                                   <div class="card-footer bg-green">
+                                        <h2 class="card-title text-center">Aşırı Gelişmiş Üyelik</h2>
+                                   </div>
                               </div>
                          </div>
 

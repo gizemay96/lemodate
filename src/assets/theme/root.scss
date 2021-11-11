@@ -9,8 +9,20 @@ body {
   background-color: $bg-color-black;
 }
 
+.bg-liq{
+  background-repeat: no-repeat;
+  background-position-y: -8vh;
+  background-image: url(../images/bg_liq.png);
+}
+
 .bg-green {
   background-color: $bg-green;
+}
+
+.bg-line{
+  background-repeat: no-repeat;
+  background-position-y: 40vh;
+  background-image: url(../images/bg3.png);
 }
 
 .bg-yellow {
@@ -57,7 +69,7 @@ body {
 .logo-case {
 
   img {
-    max-width: 420px;
+    max-width: 320px;
   }
 
 
@@ -140,6 +152,26 @@ h1 {
   .reversed{
     flex-direction: column-reverse;
   }
+
+  .comp{
+    display: none;
+  }
+
+  .logo-case{
+    margin: 0 !important;
+    .logo{
+      margin: 0;
+  
+      img{
+        max-width: 250px !important;
+      }
+    }
+  }
+
+
+  .bg-liq{
+    background-position-y: -35vh;
+  }
 }
 
 img {
@@ -196,7 +228,8 @@ img {
   img {
     top: -35px;
     z-index: 5;
-    position: inherit;
+    position: relative;
+    // opacity: 0;
   }
 
   .card-footer {
@@ -204,6 +237,8 @@ img {
     position: inherit;
     border-radius: 25px;
     padding: 25px 0;
+    transform: translateY(-260px);
+    border: none;
   }
 
   .content {

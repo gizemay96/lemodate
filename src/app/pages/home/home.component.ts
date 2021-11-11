@@ -20,6 +20,9 @@ export class HomeComponent implements OnInit {
   closeScrolling = false;
   imgLeftAnim;
   imgRightAnim;
+  cardAnim;
+  cardLogoAnim;
+  cardUpAnime;
 
   constructor(private translate: TranslateService) {
   }
@@ -27,7 +30,6 @@ export class HomeComponent implements OnInit {
   ngAfterViewInit(): void {
     var textWrapper = document.querySelector('.an-2');
     if (textWrapper) {
-      console.log('bla')
       textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
     }
 
@@ -47,17 +49,40 @@ export class HomeComponent implements OnInit {
       opacity: 1,
     })
 
-    anime({
-      targets: '.dir',
-      translateX: 50,
-      easing: 'easeInOutSine'
-    });
+    this.cardAnim = anime({
+      targets: '.openAnimation',
+      translateY: [-120, 190],
+      duration: 5000,
+      autoplay: false,
+    })
+
+    this.cardLogoAnim = anime({
+      targets: '.cardLogoAnim',
+      duration: 5000,
+      translateY: [-180, -210],
+      autoplay: false,
+      opacity: 1,
+      zIndex: {
+        value: [0, 1],
+        round: true
+      }
+    })
+
+    this.cardUpAnime = anime({
+      targets: '.cardUpAnime',
+      duration: 2000,
+      autoplay: false,
+      easing: 'easeInOutQuart',
+      zIndex: {
+        value: [5, 0],
+        round: true
+      },
+    })
 
   }
 
   ngOnInit(): void {
     this.language = window.localStorage.getItem('lang');
-    console.log(this.language)
   }
 
   changeLanguage(lang: string) {
@@ -73,7 +98,6 @@ export class HomeComponent implements OnInit {
     }, 150);
     setTimeout(() => {
       this.closeScrolling = false;
-      console.log(window.location.hash)
     }, 700);
   }
 
@@ -83,6 +107,14 @@ export class HomeComponent implements OnInit {
     }
     if (window.location.hash === ('#about/2')) {
       this.imgLeftAnim.restart();
+    }
+
+    if (window.location.hash === ('#subscription')) {
+      setTimeout(() => {
+        this.cardAnim.restart();
+        this.cardUpAnime.restart();
+        this.cardLogoAnim.restart();
+      }, 200);
     }
   }
 
