@@ -136,6 +136,10 @@ h1 {
   img {
     max-height: 480px !important;
   }
+
+  .reversed{
+    flex-direction: column-reverse;
+  }
 }
 
 img {
