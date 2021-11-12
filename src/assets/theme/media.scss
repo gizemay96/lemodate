@@ -1,4 +1,9 @@
-@media screen and (max-width: 770px) {
+
+@media screen and (max-height: 620px) {
+}
+
+
+@media screen and (max-width: 779px) {
     h1 {
         font-size: 30px;
     }
@@ -40,13 +45,28 @@
     }
 
     .bg-liq {
-        background-position-y: -35vh;
+        background-position-y: -14rem;
     }
 
-    .card {
-        margin: 0 !important;
+    .cards{
+        justify-content: center !important;
+
+        .content{
+            padding: 5px !important;
+            height: 85%;
+            display: flex;
+            align-items: center;
+        }
+        .title{
+            h2{
+                line-height: 20px !important;
+            }
+        }
+       .price{
+           h4{
+               font-size: 1.2rem !important;
+           }
+       }
     }
 }
 
-@media screen and (max-height: 600px) {
-}
