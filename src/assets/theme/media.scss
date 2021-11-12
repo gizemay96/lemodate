@@ -1,0 +1,52 @@
+@media screen and (max-width: 770px) {
+    h1 {
+        font-size: 30px;
+    }
+
+    .text {
+        padding-top: 0px !important;
+        justify-content: center;
+
+        h3 {
+            display: none !important;
+        }
+    }
+
+    .img {
+        text-align: center !important;
+    }
+
+    img {
+        max-height: 65vh !important;
+    }
+
+    .reversed {
+        flex-direction: column-reverse;
+    }
+
+    .comp {
+        display: none;
+    }
+
+    .logo-case {
+        margin: 0 !important;
+        .logo {
+            margin: 0;
+
+            img {
+                max-width: 250px !important;
+            }
+        }
+    }
+
+    .bg-liq {
+        background-position-y: -35vh;
+    }
+
+    .card {
+        margin: 0 !important;
+    }
+}
+
+@media screen and (max-height: 600px) {
+}
