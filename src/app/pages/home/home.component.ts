@@ -2,6 +2,8 @@ import { Component, HostListener, OnInit } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
 import { SectionModel } from '@aotearoan/angular-fullpage';
 import anime from 'animejs';
+import { AnimationItem } from 'lottie-web';
+import { AnimationOptions } from 'ngx-lottie';
 
 @Component({
   selector: 'app-home',
@@ -23,6 +25,13 @@ export class HomeComponent implements OnInit {
   cardAnim;
   cardLogoAnim;
   cardUpAnime;
+
+  options: AnimationOptions = {
+    path: '/assets/pinjump.json',
+    renderer: 'svg',
+    loop: false,
+    autoplay: true,
+  };
 
   constructor(private translate: TranslateService) {
   }
@@ -83,6 +92,9 @@ export class HomeComponent implements OnInit {
 
   ngOnInit(): void {
     this.language = window.localStorage.getItem('lang');
+    // setTimeout(() => {
+    //   document.getElementById('test').style.display = 'none';
+    // }, 1300);
   }
 
   changeLanguage(lang: string) {
@@ -120,6 +132,11 @@ export class HomeComponent implements OnInit {
 
   getCurrentRoute() {
     return window.location.hash === 'about/2'
+  }
+
+
+  animationCreated(animationItem: AnimationItem): void {
+    console.log(animationItem);
   }
 
 }
