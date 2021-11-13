@@ -2,8 +2,8 @@
      [lockScrolling]="closeScrolling">
      <section class="fullpage-section bg-liq" [id]="sections[0].url">
           <app-section [section]="sections[0]">
-               <!-- <ng-lottie [options]="options" class="liquid-anim" id="greating-anim" (animationCreated)="animationCreated($event)">
-               </ng-lottie> -->
+               <ng-lottie [options]="options" class="liquid-anim" id="greating-anim" (animationCreated)="animationCreated($event)">
+               </ng-lottie>
                <nav class="navbar navbar-expand-lg">
                     <a class="navbar-brand" href="">
                          <img src="../../../assets/images/logo-text.png" class="d-inline-block align-text-top">
@@ -21,7 +21,8 @@
                                              class="sr-only">(current)</span></a>
                               </li>
                               <li class="nav-item nav-link">
-                                   <a class="nav-link" (click)="getSection(subscription)">{{'navbar.subscriptions' | translate}}</a>
+                                   <a class="nav-link" (click)="getSection(subscription)">{{'navbar.subscriptions' |
+                                        translate}}</a>
                               </li>
                               <li class="nav-item nav-link">
                                    <a class="nav-link" href="#"> {{'navbar.support' | translate}}</a>
@@ -29,20 +30,16 @@
                               <li class="nav-item nav-link">
                                    <div class="row">
                                         <div class="col">
-                                             <div ngbDropdown class="d-inline-block" placement="left">
-                                                  <button class="nav-link d-flex align-items-center" id="language"
-                                                       ngbDropdownToggle>
-                                                       <img class="nav-icon" src="../../../assets/icons/lang.svg"
-                                                            alt="">
-                                                       <span>{{language | uppercase }}</span>
-                                                  </button>
-                                                  <div ngbDropdownMenu aria-labelledby="language">
-                                                       <button [ngClass]="{'selected': language === 'tr'}" class="nav-link"
-                                                            ngbDropdownItem (click)="changeLanguage('tr')">TR</button>
-                                                       <button [ngClass]="{'selected': language === 'en'}" class="nav-link"
-                                                            ngbDropdownItem (click)="changeLanguage('en')">EN</button>
-                                                  </div>
-                                             </div>
+                                             <a class="nav-link d-flex align-items-center" mat-button
+                                                  [matMenuTriggerFor]="menu">
+                                                  <img class="nav-icon" src="../../../assets/icons/lang.svg" alt="">
+                                                  <span>{{language | uppercase }}</span></a>
+                                             <mat-menu #menu="matMenu">
+                                                  <a [ngClass]="{'selected': language === 'tr'}" class="nav-link"
+                                                       mat-menu-item (click)="changeLanguage('tr')">TR</a>
+                                                  <a [ngClass]="{'selected': language === 'en'}" class="nav-link"
+                                                       mat-menu-item (click)="changeLanguage('en')">EN</a>
+                                             </mat-menu>
                                         </div>
                                    </div>
                               </li>

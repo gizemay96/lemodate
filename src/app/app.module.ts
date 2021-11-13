@@ -11,9 +11,10 @@ import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { HomeComponent } from './pages/home/home.component';
 import { NgbDropdownModule, NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { FullpageModule } from '@aotearoan/angular-fullpage';
-import { GreetingComponent } from './pages/greeting/greeting.component';
 import player from 'lottie-web';
 import { LottieModule } from 'ngx-lottie';
+import {MatMenuModule} from '@angular/material/menu';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 export function HttpLoader(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/language/', '.json')
@@ -26,16 +27,17 @@ export function playerFactory() {
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent,
-    GreetingComponent
+    HomeComponent
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     AppRoutingModule,
     HttpClientModule,
     NgbModule,
     NgbDropdownModule,
     FullpageModule,
+    MatMenuModule,
     TranslateModule.forRoot({
       defaultLanguage: 'en',
       loader: {
@@ -44,7 +46,7 @@ export function playerFactory() {
         deps: [HttpClient]
       },
     }),
-    LottieModule.forRoot({ player: playerFactory })
+    LottieModule.forRoot({ player: playerFactory }),
   ],
   providers: [],
   bootstrap: [AppComponent]

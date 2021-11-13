@@ -24,9 +24,7 @@ body {
       max-width: 300px;
     }
   }
-
 }
-
 
 h1 {
   font-family: Poppins;
@@ -53,7 +51,6 @@ img {
   background-repeat: no-repeat;
   background-position-y: -8vh;
   background-image: url(../images/bg_liq.png);
-
 }
 
 .bg-green {
@@ -111,19 +108,16 @@ img {
   }
 }
 
-.dropdown-menu {
-  background-color: $bg-color-yellow;
-  min-width: 6rem;
-  left: -10px;
+.mat-menu-content {
+  background-color: black;
+  border: 1px solid #81c04b;
 
-  .dropdown-item {
-    color: black;
-
+  .mat-menu-item {
+    color: white;
     &:hover {
-      background-color: $btn-seccess;
+      background-color: darken($color: $btn-seccess, $amount: 15);
       color: white;
     }
-
     &.selected {
       background-color: $btn-seccess;
       color: white;
@@ -149,8 +143,6 @@ img {
     max-width: 500px;
   }
 }
-
-
 
 .container {
   max-width: 1286px !important;
