@@ -1,8 +1,9 @@
 <ao-fullpage *ngIf="sections" [sections]="sections" (sectionChange)="sectionChange($event)"
-[lockScrolling]="closeScrolling">
-<section class="fullpage-section bg-liq" [id]="sections[0].url">
-     <app-section [section]="sections[0]">
-          <ng-lottie [options]="options" class="liquid-anim" (animationCreated)="animationCreated($event)"></ng-lottie>
+     [lockScrolling]="closeScrolling">
+     <section class="fullpage-section bg-liq" [id]="sections[0].url">
+          <app-section [section]="sections[0]">
+               <!-- <ng-lottie [options]="options" class="liquid-anim" id="greating-anim" (animationCreated)="animationCreated($event)">
+               </ng-lottie> -->
                <nav class="navbar navbar-expand-lg">
                     <a class="navbar-brand" href="">
                          <img src="../../../assets/images/logo-text.png" class="d-inline-block align-text-top">
@@ -20,7 +21,7 @@
                                              class="sr-only">(current)</span></a>
                               </li>
                               <li class="nav-item nav-link">
-                                   <a class="nav-link" href="#">{{'navbar.subscriptions' | translate}}</a>
+                                   <a class="nav-link" (click)="getSection(subscription)">{{'navbar.subscriptions' | translate}}</a>
                               </li>
                               <li class="nav-item nav-link">
                                    <a class="nav-link" href="#"> {{'navbar.support' | translate}}</a>
@@ -29,17 +30,17 @@
                                    <div class="row">
                                         <div class="col">
                                              <div ngbDropdown class="d-inline-block" placement="left">
-                                                  <a class="nav-link d-flex align-items-center" id="language"
+                                                  <button class="nav-link d-flex align-items-center" id="language"
                                                        ngbDropdownToggle>
                                                        <img class="nav-icon" src="../../../assets/icons/lang.svg"
                                                             alt="">
                                                        <span>{{language | uppercase }}</span>
-                                                  </a>
+                                                  </button>
                                                   <div ngbDropdownMenu aria-labelledby="language">
-                                                       <a [ngClass]="{'selected': language === 'tr'}" class="nav-link"
-                                                            ngbDropdownItem (click)="changeLanguage('tr')">TR</a>
-                                                       <a [ngClass]="{'selected': language === 'en'}" class="nav-link"
-                                                            ngbDropdownItem (click)="changeLanguage('en')">EN</a>
+                                                       <button [ngClass]="{'selected': language === 'tr'}" class="nav-link"
+                                                            ngbDropdownItem (click)="changeLanguage('tr')">TR</button>
+                                                       <button [ngClass]="{'selected': language === 'en'}" class="nav-link"
+                                                            ngbDropdownItem (click)="changeLanguage('en')">EN</button>
                                                   </div>
                                              </div>
                                         </div>
@@ -133,7 +134,7 @@
      </section>
 
 
-     <section class="fullpage-section bg-black" [id]="sections[4].url">
+     <section #subscription class="fullpage-section bg-black" [id]="sections[4].url">
           <app-section [section]="sections[4]">
                <div class="container">
                     <div class="cards row justify-content-between">
@@ -234,10 +235,28 @@
 
                     </div>
                </div>
-               <!-- <a [routerLink]="'/'">Back to top</a> -->
+               <a [routerLink]="'/'">Back to top</a>
           </app-section>
      </section>
 
-
+     <section class="fullpage-section footer" [id]="sections[5].url">
+          <app-section [section]="sections[5]">
+               <div class="d-flex justify-content-center align-items-center footer-body">
+                    <div class="">
+                         <div class="footer-logo"><img src="../../../assets/images/footer_logo.png" alt=""></div>
+                         <div class="frame text-center mt-4"><img src="../../../assets/images/Frame.png" alt=""></div>
+                         <div class="frame text-center mt-4" style="cursor: pointer;"><img
+                                   src="../../../assets/images/googleplay.png" alt="">
+                         </div>
+                    </div>
+               </div>
+               <div class="legal-info d-flex justify-content-center align-items-center bg-black">
+                    <a href="">KVK ve Gizlilik Politikası</a>
+                    <a href="">Kullanım Koşulları</a>
+                    <a href="">© 2021 Lorem Grup, Tüm Hakları Saklıdır.</a>
+               </div>
+               <!-- <a [routerLink]="'/'">Back to top</a> -->
+          </app-section>
+     </section>
 
 </ao-fullpage>

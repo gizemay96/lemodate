@@ -1,4 +1,4 @@
-import { Component, HostListener, OnInit } from '@angular/core';
+import { Component, ElementRef, HostListener, OnInit, ViewChild } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
 import { SectionModel } from '@aotearoan/angular-fullpage';
 import anime from 'animejs';
@@ -11,12 +11,16 @@ import { AnimationOptions } from 'ngx-lottie';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
+
+  @ViewChild('subscription') subscription : ElementRef
+
   sections: SectionModel[] = [
     { url: 'home', active: false, pageTop: true },
     { url: 'about', active: false },
     { url: 'about/2', active: false },
     { url: 'about/3', active: false },
     { url: 'subscription', active: false },
+    { url: 'footer', active: false },
   ];
   language;
   closeScrolling = false;
@@ -92,9 +96,9 @@ export class HomeComponent implements OnInit {
 
   ngOnInit(): void {
     this.language = window.localStorage.getItem('lang');
-    // setTimeout(() => {
-    //   document.getElementById('test').style.display = 'none';
-    // }, 1300);
+    setTimeout(() => {
+      document.getElementById('greating-anim').style.display = 'none';
+    }, 2000);
   }
 
   changeLanguage(lang: string) {
@@ -137,6 +141,10 @@ export class HomeComponent implements OnInit {
 
   animationCreated(animationItem: AnimationItem): void {
     console.log(animationItem);
+  }
+
+  getSection(e : HTMLElement){
+    window.scrollTo(0 , this.subscription.nativeElement.offsetTop)
   }
 
 }
