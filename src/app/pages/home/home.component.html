@@ -28,8 +28,6 @@
                                    <a class="nav-link" href="#"> {{'navbar.support' | translate}}</a>
                               </li>
                               <li class="nav-item nav-link">
-                                   <div class="row">
-                                        <div class="col">
                                              <a class="nav-link d-flex align-items-center" mat-button
                                                   [matMenuTriggerFor]="menu">
                                                   <img class="nav-icon" src="../../../assets/icons/lang.svg" alt="">
@@ -40,8 +38,6 @@
                                                   <a [ngClass]="{'selected': language === 'en'}" class="nav-link"
                                                        mat-menu-item (click)="changeLanguage('en')">EN</a>
                                              </mat-menu>
-                                        </div>
-                                   </div>
                               </li>
                          </ul>
 
