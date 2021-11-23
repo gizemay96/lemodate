@@ -1,0 +1,83 @@
+@import "~swiper/css";
+@import "~swiper/css/effect-cards";
+
+
+.swiper {
+  width: 77vw;
+  height: 67vh;
+}
+
+.swiper-slide {
+  border-radius: 18px;
+  font-size: 22px;
+  font-weight: bold;
+  color: #fff;
+}
+
+
+.swiper-slide:nth-child(1n) {
+  background-color: #FDFD78;
+}
+
+.swiper-slide:nth-child(2n) {
+  background-color: #A0DE6E;
+}
+
+.swiper-slide:nth-child(3n) {
+  background-color: #78B446;
+}
+
+.bg-liq {
+  box-shadow: -1px 0px 8px -2px grey;
+  background-repeat: no-repeat;
+  background-image: url(../../../assets/images/bg_liq.png);
+  background-size: 120%;
+}
+
+.card-body {
+  height: 100%;
+  /* padding: 10px; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+  .header {
+    display: flex;
+    justify-content: center;
+  }
+
+  ul {
+    margin: 0;
+
+    li {
+      color: black;
+      font-size: 14px;
+      padding: 5px;
+      margin: 0;
+      line-height: 17px;
+    }
+  }
+
+}
+
+
+@media screen and (min-width: 505px) {
+  .swiper {
+       width: 55vw !important;
+       height: 90vh !important;
+     }
+}
+
+@media screen and (min-height: 670px) {
+     .swiper {
+          width: 70vw !important;
+          height: 57vh !important;
+        }
+}
+
+
+@media screen and (max-height: 540px) {
+     li {
+       font-size: 12px !important;
+     }
+   }

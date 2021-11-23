@@ -1,0 +1,24 @@
+@import "./assets//theme/variables.scss";
+@import "./assets//theme/root.scss";
+@import "./assets/theme/media.scss";
+
+
+* {
+  touch-action: manipulation;
+  font-family: Poppins , Roboto, "Helvetica Neue", sans-serif !important;
+}
+
+html,
+body {
+  height: 100%;
+  overscroll-behavior-y: contain !important;
+}
+
+body {
+  margin: 0;
+}
+
+.fullpage,
+.fullpage-section {
+  overscroll-behavior: contain !important;
+}
