@@ -174,5 +174,4 @@ export class HomeComponent implements OnInit {
   getSection(e: HTMLElement) {
     window.scrollTo(0, this.subscription.nativeElement.offsetTop)
   }
-
 }
