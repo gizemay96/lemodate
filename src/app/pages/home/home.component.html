@@ -1,3 +1,8 @@
+
+<div [routerLink]="'/'" class="top-btn">
+     <button class="btn btn-sm">Go Home</button>
+</div>
+
 <ao-fullpage *ngIf="sections" [sections]="sections" (sectionChange)="sectionChange($event)" id="test">
      <section #home class="fullpage-section bg-liq" [id]="sections[0].url">
           <app-section [section]="sections[0]">
@@ -261,7 +266,3 @@
 
 
 </ao-fullpage>
-
-<div [routerLink]="'/'" class="top-btn">
-     <button class="btn btn-sm">Go Home</button>
-</div>
