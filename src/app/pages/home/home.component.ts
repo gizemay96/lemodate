@@ -141,6 +141,7 @@ export class HomeComponent implements OnInit {
     }, 150);
     setTimeout(() => {
       this.activeSectionId = window.location.hash.substring(1);
+      console.log(this.activeSectionId)
       this.closeScrolling = false;
     }, 700);
   }

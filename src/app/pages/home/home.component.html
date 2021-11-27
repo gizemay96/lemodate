@@ -1,5 +1,5 @@
 
-<div [routerLink]="'/'" class="top-btn">
+<div *ngIf="activeSectionId !== ''" [routerLink]="'/'" class="top-btn">
      <button class="btn btn-sm">Go Home</button>
 </div>
 
