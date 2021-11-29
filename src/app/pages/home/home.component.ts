@@ -5,6 +5,7 @@ import anime from 'animejs';
 import { AnimationItem } from 'lottie-web';
 import { AnimationOptions } from 'ngx-lottie';
 import { DeviceDetectorService } from 'ngx-device-detector';
+import { Router } from '@angular/router';
 
 
 
@@ -45,7 +46,10 @@ export class HomeComponent implements OnInit {
 
   deviceInfo;
 
-  constructor(private translate: TranslateService , private deviceService: DeviceDetectorService) {
+  constructor(private translate: TranslateService ,
+     private deviceService: DeviceDetectorService,
+     private router: Router
+     ) {
     this.epicFunction();
     const touchmoveHandler = event => {
       if (window.pageYOffset !== 0) { }
@@ -141,7 +145,6 @@ export class HomeComponent implements OnInit {
     }, 150);
     setTimeout(() => {
       this.activeSectionId = window.location.hash.substring(1);
-      console.log(this.activeSectionId)
       this.closeScrolling = false;
     }, 700);
   }
@@ -172,7 +175,7 @@ export class HomeComponent implements OnInit {
     console.log(animationItem);
   }
 
-  getSection(e: HTMLElement) {
-    window.scrollTo(0, this.subscription.nativeElement.offsetTop)
+  getSection(fragmentKey) {
+    this.router.navigate(["/home"], { fragment: fragmentKey })
   }
 }

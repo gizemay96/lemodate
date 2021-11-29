@@ -22,15 +22,15 @@
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                          <ul class="navbar-nav ml-auto">
                               <li class="nav-item nav-link active">
-                                   <a class="nav-link" href="#"> {{'navbar.about' | translate}} <span
+                                   <a class="nav-link" (click)="getSection('about')"> {{'navbar.about' | translate}} <span
                                              class="sr-only">(current)</span></a>
                               </li>
                               <li class="nav-item nav-link">
-                                   <a class="nav-link" (click)="getSection(subscription)">{{'navbar.subscriptions' |
+                                   <a class="nav-link" (click)="getSection('subscription')">{{'navbar.subscriptions' |
                                         translate}}</a>
                               </li>
                               <li class="nav-item nav-link">
-                                   <a class="nav-link" href="#"> {{'navbar.support' | translate}}</a>
+                                   <a class="nav-link" (click)="getSection('footer')"> {{'navbar.support' | translate}}</a>
                               </li>
                               <li class="nav-item nav-link">
                                    <a class="nav-link d-flex align-items-center" mat-button [matMenuTriggerFor]="menu">
@@ -116,7 +116,7 @@
                                    <div class="circle mt-1 mr-4">3</div>
                               </div>
                               <div class="">
-                                   <h1>Lorem Ipsum </h1>
+                                   <h1>Eşzamanlı Sorular </h1>
                                    <h3>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</h3>
                               </div>
                          </div>
