@@ -14,14 +14,15 @@ SwiperCore.use([EffectCards]);
   encapsulation: ViewEncapsulation.ShadowDom,
 })
 export class MobileCardsComponent implements OnInit {
-  @ViewChild('swipe') swipe: SwiperComponent
+  @ViewChild('swipe') swipe: SwiperComponent;
+  showingPricingId = 0;
 
   constructor() { }
 
   ngOnInit(): void {
   }
-  
-  ngAfterViewInit(): void { 
+
+  ngAfterViewInit(): void {
     this.swipe.swiperRef.slideTo(1);
   }
 
