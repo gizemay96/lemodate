@@ -4,11 +4,11 @@
 </div>
 
 <ao-fullpage *ngIf="sections" [sections]="sections" (sectionChange)="sectionChange($event)" id="test">
-     <section #home class="fullpage-section bg-liq" [id]="sections[0].url">
+     <section #home class="fullpage-section" [id]="sections[0].url">
+          <ng-lottie [options]="options" class="liquid-anim" id="greating-anim"
+               (animationCreated)="animationCreated($event)">
+          </ng-lottie>
           <app-section [section]="sections[0]">
-               <ng-lottie [options]="options" class="liquid-anim" id="greating-anim"
-                    (animationCreated)="animationCreated($event)">
-               </ng-lottie>
                <nav class="navbar navbar-expand-lg">
                     <a class="navbar-brand" href="">
                          <img src="../../../assets/images/logo-text.png" class="d-inline-block align-text-top">

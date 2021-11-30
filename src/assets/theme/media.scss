@@ -80,6 +80,13 @@
   }
 }
 
+@media screen and (max-width: 1430px) {
+  svg {
+    width: auto !important;
+    height: 115vh !important;
+  }
+}
+
 @media screen and (max-height: 991px) {
   .navbar-nav {
     text-align: right;

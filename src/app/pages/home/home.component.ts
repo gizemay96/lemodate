@@ -127,9 +127,6 @@ export class HomeComponent implements OnInit {
 
   ngOnInit(): void {
     this.language = window.localStorage.getItem('lang');
-    setTimeout(() => {
-      document.getElementById('greating-anim').style.display = 'none';
-    }, 2000);
   }
 
   changeLanguage(lang: string) {

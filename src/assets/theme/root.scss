@@ -5,7 +5,6 @@ body {
 }
 
 .footer {
-
   .footer-case {
     display: flex;
     flex-direction: column;
@@ -245,9 +244,11 @@ img {
 
 .liquid-anim {
   position: absolute;
+  width: 100%;
   // z-index: 9999;
 }
-.cdk-overlay-connected-position-bounding-box{
+.cdk-overlay-connected-position-bounding-box {
   align-items: flex-end !important;
   padding-right: 5px !important;
 }
+
