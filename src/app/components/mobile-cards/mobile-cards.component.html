@@ -21,7 +21,7 @@
         Gelişmiş Üyelik
       </div>
       <div class="body">
-        <ul *ngIf="showingPricingId !== 2">
+        <ul *ngIf="showingPricingId !== 2" class="zoomIn">
           <li>Fotoğrafların chat ekranı açılmadan gösterilecek şekilde ayarlanabilir.
           </li>
           <li>Sesli görüşme seçeneği aktif edilir.</li>
@@ -29,7 +29,7 @@
           <li>Görünmez moduna geçilebilir.</li>
         </ul>
         <div *ngIf="showingPricingId === 2">
-          <div class="pricing-info">
+          <div class="pricing-info zoomIn">
             <div class="price-case">
               <div class="price-twin price">
                 <h4>Haftalık</h4>
@@ -63,14 +63,14 @@
         Aşırı Gelişmiş Üyelik
       </div>
       <div class="body">
-        <ul *ngIf="showingPricingId !== 3">
+        <ul *ngIf="showingPricingId !== 3" class="zoomIn">
           <li>Gelişmiş Üyelikteki Bütün Özelliklere Ek,</li>
           <li>Görüntülü görüşme seçeneği aktif edilir.</li>
           <li>Chat ekranında fotoğraf paylaşma seçeceği aktif edilir.</li>
           <li>Lokasyon değiştirebilme özelliği aktif edilir. </li>
         </ul>
         <div *ngIf="showingPricingId === 3">
-          <div class="pricing-info">
+          <div class="pricing-info zoomIn">
             <div class="price-case">
               <div class="price-twin price">
                 <h4>Haftalık</h4>
