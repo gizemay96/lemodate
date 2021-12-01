@@ -1,6 +1,8 @@
-
 <div *ngIf="activeSectionId !== ''" [routerLink]="'/'" class="top-btn d-flex justify-content-end align-items-end">
-     <button class="btn btn-sm">Go Home</button>
+     <!-- <button class="btn btn-sm">Go Home</button> -->
+     <div class="icon-case" style="z-index: 9999999;">
+          <img class="home-icon" src="../../../assets/icons/home_icon.svg" alt="">
+     </div>
 </div>
 
 <ao-fullpage *ngIf="sections" [sections]="sections" (sectionChange)="sectionChange($event)" id="test">
@@ -16,21 +18,22 @@
                     <button class="navbar-toggler" type="button" data-toggle="collapse"
                          data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                          aria-expanded="false" aria-label="Toggle navigation">
-                         <i style="color: 'white';" class="fas fa-adjust"></i>
+                         <img style="width: 40px;" src="../../../assets/icons/nav_toggle.svg" alt="">
                     </button>
 
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                          <ul class="navbar-nav ml-auto">
                               <li class="nav-item nav-link active">
-                                   <a class="nav-link" (click)="getSection('about')"> {{'navbar.about' | translate}} <span
-                                             class="sr-only">(current)</span></a>
+                                   <a class="nav-link" (click)="getSection('about')"> {{'navbar.about' | translate}}
+                                        <span class="sr-only">(current)</span></a>
                               </li>
                               <li class="nav-item nav-link">
                                    <a class="nav-link" (click)="getSection('subscription')">{{'navbar.subscriptions' |
                                         translate}}</a>
                               </li>
                               <li class="nav-item nav-link">
-                                   <a class="nav-link" (click)="getSection('footer')"> {{'navbar.support' | translate}}</a>
+                                   <a class="nav-link" (click)="getSection('footer')"> {{'navbar.support' |
+                                        translate}}</a>
                               </li>
                               <li class="nav-item nav-link">
                                    <a class="nav-link d-flex align-items-center" mat-button [matMenuTriggerFor]="menu">
@@ -51,7 +54,7 @@
                <div class="d-flex justify-content-center logo-case col-12 mt-5 ml-5">
                     <div class="col-lg-7 comp">EKŞİ dENEYİM</div>
                     <div class="col-lg-5 mt-5 logo d-flex justify-content-center">
-                         <img class="logo-lg" src="../../../assets/images/logo3.png" alt="">
+                         <img class="logo-lg" src="../../../assets/images/logo_wo_text.png" alt="">
                     </div>
                </div>
           </app-section>
