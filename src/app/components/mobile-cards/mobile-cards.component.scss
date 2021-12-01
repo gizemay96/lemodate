@@ -1,6 +1,10 @@
 @import "~swiper/css";
 @import "~swiper/css/effect-cards";
 
+*{
+  font-family: Poppins !important;
+}
+
 .swiper {
   width: 77vw;
   height: 67vh;

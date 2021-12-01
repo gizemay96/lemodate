@@ -38,7 +38,7 @@ body {
 }
 
 h1 {
-  font-family: Poppins !important;
+  font-family: Poppins , Roboto, "Helvetica Neue", sans-serif !important;
   font-size: 48px !important;
   font-style: normal !important;
   font-weight: 500 !important;
@@ -90,7 +90,7 @@ img {
   background: transparent;
 
   .nav-link {
-    font-family: Poppins;
+    font-family: Poppins , Roboto, "Helvetica Neue", sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 18px;
