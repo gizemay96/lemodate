@@ -57,6 +57,8 @@
 
     .logo {
       margin: 0;
+      margin-top: 13vh !important;
+      margin-right: 5vh !important;
 
       img {
         max-width: 250px !important;
@@ -111,5 +113,9 @@
 @media screen and (max-height: 991px) {
   .navbar-nav {
     text-align: right;
+
+    .nav-link{
+      margin-right: 10px !important;
+    }
   }
 }
