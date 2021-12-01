@@ -16,15 +16,23 @@
     text-align: center !important;
   }
 
-  .footer-logo {
-    img {
-      max-height: 50vh !important;
+  .footer-case {
+    .footer-logo {
+      img {
+        max-height: 30vh !important;
+      }
     }
-  }
 
-  .legal-info {
-    a {
-      font-size: 0.6rem !important;
+    .frame {
+      img {
+        max-width: 70vw !important;
+      }
+    }
+
+    .legal-info {
+      a {
+        font-size: 0.6rem !important;
+      }
     }
   }
 
