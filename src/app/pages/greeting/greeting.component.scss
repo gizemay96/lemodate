@@ -1,0 +1,58 @@
+.page-greeting {
+  margin: 0px;
+  height: 100vh;
+  font-family: Poppins, sans-serif !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.text-animation {
+  position: relative;
+  font-size: 80px;
+  font-weight: 600;
+  color: #eee;
+  width: 100vw;
+  height: 200px;
+  text-align: center;
+  line-height: 200px;
+  overflow: hidden;
+}
+.text-animation span {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 1;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  @media screen and (max-width: 779px) {
+    font-size: 9vw !important;
+  }
+}
+
+.text-animation div , span{
+  position: unset;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  img {
+    max-height: 300px;
+    max-width: 82vw;
+  }
+
+  .btn {
+    color: #ffea59;
+    background: #faebd700;
+    margin-top: -60px;
+    border: 1px solid;
+  }
+}
+.get-page{
+  top: 295px !important;
+}
+

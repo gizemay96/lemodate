@@ -17,6 +17,7 @@ import {MatMenuModule} from '@angular/material/menu';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SwiperModule } from "swiper/angular";
 import { MobileCardsComponent } from './components/mobile-cards/mobile-cards.component';
+import { GreetingComponent } from './pages/greeting/greeting.component';
 
 export function HttpLoader(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/language/', '.json')
@@ -30,7 +31,8 @@ export function playerFactory() {
   declarations: [
     AppComponent,
     HomeComponent,
-    MobileCardsComponent
+    MobileCardsComponent,
+    GreetingComponent
   ],
   imports: [
     BrowserModule,
