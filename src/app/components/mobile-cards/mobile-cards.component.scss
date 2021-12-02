@@ -85,8 +85,8 @@
   justify-content: center;
   padding: 5px 0;
   height: 45vh;
-  align-items: end;
-  -webkit-align-items: end;
+  align-items: flex-end !important;
+  -webkit-align-items: flex-end !important;
 
   button {
     background: black;
