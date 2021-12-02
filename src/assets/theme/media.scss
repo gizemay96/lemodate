@@ -3,6 +3,14 @@
     font-size: 6vw !important;
   }
 
+  .navbar-collapse {
+    position: absolute;
+    text-align: right;
+    width: 100%;
+    top: 13vh;
+    z-index: 9999999999;
+  }
+
   .home-icon {
     max-width: 35px !important;
   }
@@ -93,14 +101,12 @@
     }
   }
 
-
-  .circle{
+  .circle {
     width: 40px !important;
     height: 40px !important;
     font-size: 25px !important;
     margin-right: 10px !important;
   }
-
 }
 
 @media screen and (max-width: 1430px) {
@@ -114,7 +120,7 @@
   .navbar-nav {
     text-align: right;
 
-    .nav-link{
+    .nav-link {
       margin-right: 10px !important;
     }
   }

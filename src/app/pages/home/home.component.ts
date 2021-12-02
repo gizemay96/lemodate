@@ -1,13 +1,11 @@
-import { Component, ElementRef, HostListener, OnInit, ViewChild } from '@angular/core';
+import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
+import { Router } from '@angular/router';
 import { TranslateService } from '@ngx-translate/core';
+import { DeviceDetectorService } from 'ngx-device-detector';
 import { SectionModel } from '@aotearoan/angular-fullpage';
-import anime from 'animejs';
 import { AnimationItem } from 'lottie-web';
 import { AnimationOptions } from 'ngx-lottie';
-import { DeviceDetectorService } from 'ngx-device-detector';
-import { Router } from '@angular/router';
-
-
+import anime from 'animejs';
 
 
 @Component({
@@ -46,10 +44,10 @@ export class HomeComponent implements OnInit {
 
   deviceInfo;
 
-  constructor(private translate: TranslateService ,
-     private deviceService: DeviceDetectorService,
-     private router: Router
-     ) {
+  constructor(private translate: TranslateService,
+    private deviceService: DeviceDetectorService,
+    private router: Router
+  ) {
     this.epicFunction();
     const touchmoveHandler = event => {
       if (window.pageYOffset !== 0) { }
@@ -62,20 +60,13 @@ export class HomeComponent implements OnInit {
 
   epicFunction() {
     this.deviceInfo = this.deviceService.getDeviceInfo();
-    // this.isDesktopDevice = this.deviceService.isDesktop();
-    // this.isMobile = this.deviceService.isMobile();
-    // this.isMobile = this.deviceService.isTablet();
   }
 
-  get isDesktopDevice(){
+  get isDesktopDevice() {
     return window.innerWidth > 993;
   }
 
   ngAfterViewInit(): void {
-    var textWrapper = document.querySelector('.an-2');
-    if (textWrapper) {
-      textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
-    }
 
     this.imgLeftAnim = anime({
       targets: '.fadeInLeft',
@@ -163,16 +154,12 @@ export class HomeComponent implements OnInit {
     }
   }
 
-  getCurrentRoute() {
-    return window.location.hash === 'about/2'
-  }
-
-
   animationCreated(animationItem: AnimationItem): void {
     console.log(animationItem);
   }
 
   getSection(fragmentKey) {
-    this.router.navigate(["/home"], { fragment: fragmentKey })
+    this.router.navigate(["/home"], { fragment: fragmentKey });
+    document.getElementById('navbarSupportedContent').classList.remove('show');
   }
 }

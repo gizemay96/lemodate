@@ -3,9 +3,9 @@
         "close":"Kapat"
     },
     "navbar": {
-        "about": "About",
-        "subscriptions": "Subscriptions",
-        "support": "Support"
+        "about": "Hakkımızda",
+        "subscriptions": "Üyelikler",
+        "support": "Destek"
     },
     "home":{
         "about":{

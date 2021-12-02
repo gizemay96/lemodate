@@ -1,3 +1,4 @@
+<!-- GO TOP BUTTON -->
 <div *ngIf="activeSectionId !== ''" [routerLink]="'/home'" class="top-btn d-flex justify-content-end align-items-end">
      <!-- <button class="btn btn-sm">Go Home</button> -->
      <div class="icon-case" style="z-index: 9999999;">
@@ -5,7 +6,10 @@
      </div>
 </div>
 
-<ao-fullpage *ngIf="sections" [sections]="sections" (sectionChange)="sectionChange($event)" id="test">
+<!-- PAGES -->
+<ao-fullpage *ngIf="sections" [sections]="sections" (sectionChange)="sectionChange($event)">
+
+     <!-- HOME -->
      <section #home class="fullpage-section" [id]="sections[0].url">
           <ng-lottie [options]="options" class="liquid-anim" id="greating-anim"
                (animationCreated)="animationCreated($event)">
@@ -15,7 +19,7 @@
                     <a class="navbar-brand" href="">
                          <img src="../../../assets/images/logo-text.png" class="d-inline-block align-text-top">
                     </a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" 
                          data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                          aria-expanded="false" aria-label="Toggle navigation">
                          <img style="width: 40px;" src="../../../assets/icons/nav_toggle.svg" alt="">
@@ -59,7 +63,7 @@
           </app-section>
      </section>
 
-
+     <!-- ABOUT 1 -->
      <section class="fullpage-section bg-yellow bg-line" [id]="sections[1].url">
           <app-section [section]="sections[1]">
                <div class="container pt-0 pb-0">
@@ -81,7 +85,7 @@
           </app-section>
      </section>
 
-     <!-- - -->
+     <!-- ABOUT 2 - -->
 
      <section class="fullpage-section bg-yellow bg-line" [id]="sections[2].url">
           <app-section [section]="sections[2]">
@@ -107,7 +111,7 @@
           </app-section>
      </section>
 
-     <!--  -->
+     <!-- ABOUT 3  -->
 
      <section class="fullpage-section bg-line" [id]="sections[3].url">
           <app-section [section]="sections[3]">
@@ -132,6 +136,7 @@
      </section>
 
 
+     <!-- SUBSCRIPTION WEB -->
      <section [hidden]="!isDesktopDevice" #subscription class="fullpage-section bg-black" [id]="sections[4].url">
           <app-section [section]="sections[4]">
                <div class="container">
@@ -235,6 +240,7 @@
           </app-section>
      </section>
 
+     <!-- SUBSCRIPTION MOBILE -->
      <section [hidden]="isDesktopDevice" #subscription class="fullpage-section bg-black" [id]="sections[4].url">
           <app-section [section]="sections[4]">
                <div class="container d-flex align-items-center justify-content-center h-100">
@@ -243,6 +249,7 @@
           </app-section>
      </section>
 
+     <!-- FOOTER -->
      <section class="fullpage-section footer" [id]="sections[5].url">
           <app-section [section]="sections[5]">
                <div class="footer-case">
