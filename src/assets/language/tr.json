@@ -1,7 +1,42 @@
 {
+    "general":{
+        "close":"Kapat"
+    },
     "navbar": {
-        "about": "Hakkımızda",
-        "subscriptions": "Üyelikler",
-        "support": "Destek"
+        "about": "About",
+        "subscriptions": "Subscriptions",
+        "support": "Support"
+    },
+    "home":{
+        "about":{
+            "perfect-match":"Mükemmel Eşleşme",
+            "video-chat":"Görüntülü Konuşma",
+            "concurrent-questions":"Eşzamanlı Sorular"
+        },
+        "subscription-headers":{
+            "standard":"Standart Üyelik",
+            "advenced":"Gelişmiş Üyelik",
+            "extremely-advenced":"Aşırı Gelişmiş Üyelik"
+        },
+        "subscription-body":{
+            "standard1":"Anlık sohbete geçmeden önce en az 2 soru yanıtlaman gerekir.",
+
+            "advenced1":"Fotoğrafların chat ekranı açılmadan gösterilecek şekilde ayarlanabilir.",
+            "advenced2":"Sesli görüşme seçeneği aktif edilir.",
+            "advenced3":"Soruları geç, chat'e geçelim talebi gönderme.",
+            "advenced4":"Görünmez moduna geçilebilir.",
+
+            "extAdvenced1":"Gelişmiş Üyelikteki Bütün Özelliklere Ek,",
+            "extAdvenced2":"Görüntülü görüşme seçeneği aktif edilir.",
+            "extAdvenced3":"Chat ekranında fotoğraf paylaşma seçeceği aktif edilir.",
+            "extAdvenced4":"Lokasyon değiştirebilme özelliği aktif edilir."
+        },
+        "pricing":{
+            "weekly":"Haftalık",
+            "monthly":"Aylık",
+            "yearly": "Yıllık",
+            "free": "Ücretsiz",
+            "pricing":"Ücretler"
+        }
     }
 }

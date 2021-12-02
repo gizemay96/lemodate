@@ -1,7 +1,42 @@
 {
+    "general":{
+        "close":"Close"
+    },
     "navbar": {
         "about": "About",
         "subscriptions": "Subscriptions",
         "support": "Support"
+    },
+    "home":{
+        "about":{
+            "perfect-match":"Perfect Match",
+            "video-chat":"Video Chat",
+            "concurrent-questions":"Concurrent Questions"
+        },
+        "subscription-headers":{
+            "standard":"Standard",
+            "advenced":"Advanced",
+            "extremely-advenced":"Extremely Advanced"
+        },
+        "subscription-body":{
+            "standard1":"It is necessary to answer at least 2 questions before entering the instant chat.",
+
+            "advenced1":"Photos can be set to be displayed without opening the chat screen.",
+            "advenced2":"Voice call option is activated.",
+            "advenced3":"Skip the questions, let's go to the chat, send a request.",
+            "advenced4":"You can switch to invisible mode.",
+
+            "extAdvenced1":"Same Advanced Features and",
+            "extAdvenced2":"Video call option is activated.",
+            "extAdvenced3":"Photo sharing option is activated on the chat screen.",
+            "extAdvenced4":"Location change feature is activated."
+        },
+        "pricing":{
+            "weekly":"Weekly",
+            "monthly":"Monthly",
+            "yearly": "Yearly",
+            "free": "Free",
+            "pricing":"Pricing"
+        }
     }
 }

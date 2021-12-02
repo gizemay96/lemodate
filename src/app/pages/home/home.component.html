@@ -69,7 +69,7 @@
                                    <div class="circle mt-1 mr-4">1</div>
                               </div>
                               <div class="">
-                                   <h1>Mükemmel Eşleşme</h1>
+                                   <h1>{{'home.about.perfect-match' | translate}}</h1>
                                    <h3>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</h3>
                               </div>
                          </div>
@@ -96,7 +96,7 @@
                                    <div class="circle mt-1 mr-4">2</div>
                               </div>
                               <div class="">
-                                   <h1>Görüntülü Konuşma</h1>
+                                   <h1>{{'home.about.video-chat' | translate}}</h1>
                                    <h3>It is a long established fact that a reader will be distracted by the readable
                                         content.
                                    </h3>
@@ -118,7 +118,7 @@
                                    <div class="circle mt-1 mr-4">3</div>
                               </div>
                               <div class="">
-                                   <h1>Eşzamanlı Sorular </h1>
+                                   <h1>{{'home.about.concurrent-questions' | translate}}</h1>
                                    <h3>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</h3>
                               </div>
                          </div>
@@ -135,16 +135,16 @@
      <section [hidden]="!isDesktopDevice" #subscription class="fullpage-section bg-black" [id]="sections[4].url">
           <app-section [section]="sections[4]">
                <div class="container">
-                    <div class="cards row justify-content-between">
+                    <div class="cards row justify-content-between mt-5">
 
                          <div class="card col-lg-4">
                               <div class="card-body bg-light-yellow cardUpAnime">
                                    <div class="title">
-                                        <h2 class="card-title text-center">Standart Üyelik</h2>
+                                        <h2 class="card-title text-center">{{'home.subscription-headers.standard' | translate}}</h2>
                                    </div>
                                    <div class="content p-4 pt-5">
                                         <ul>
-                                             <li>Anlık sohbete geçmeden önce en az 2 soru yanıtlaman gerekir.</li>
+                                             <li>{{'home.subscription-body.standard1' | translate}}</li>
                                         </ul>
                                    </div>
                               </div>
@@ -153,7 +153,7 @@
                                    <div class="card-footer bg-light-yellow pt-5">
                                         <div class="d-flex align-items-center justify-content-center price-case">
                                              <div class="price col-12">
-                                                  <h4>( Ücretsiz ) </h4>
+                                                  <h4>( {{'home.pricing.free' | translate}} ) </h4>
                                              </div>
                                         </div>
                                    </div>
@@ -163,15 +163,14 @@
                          <div class="card col-lg-4">
                               <div class="card-body bg-light-green cardUpAnime">
                                    <div class="title">
-                                        <h2 class="card-title text-center">Gelişmiş Üyelik</h2>
+                                        <h2 class="card-title text-center">{{'home.subscription-headers.advenced' | translate}}</h2>
                                    </div>
                                    <div class="content p-2 pt-1">
                                         <ul>
-                                             <li>Fotoğrafların chat ekranı açılmadan gösterilecek şekilde ayarlanabilir.
-                                             </li>
-                                             <li>Sesli görüşme seçeneği aktif edilir.</li>
-                                             <li>Soruları geç, chat'e geçelim talebi gönderme.</li>
-                                             <li>Görünmez moduna geçilebilir.</li>
+                                             <li>{{'home.subscription-body.advenced1' | translate}}</li>
+                                             <li>{{'home.subscription-body.advenced2' | translate}}</li>
+                                             <li>{{'home.subscription-body.advenced3' | translate}}</li>
+                                             <li>{{'home.subscription-body.advenced4' | translate}}</li>
                                         </ul>
                                    </div>
                               </div>
@@ -180,15 +179,15 @@
                                    <div class="card-footer bg-light-green">
                                         <div class="d-flex align-items-center justify-content-center price-case">
                                              <div class="price col-4">
-                                                  <h4>Haftalık</h4>
+                                                  <h4>{{'home.pricing.weekly' | translate}}</h4>
                                                   <div>9.99</div>
                                              </div>
                                              <div class="price col-4">
-                                                  <h4>Aylık</h4>
+                                                  <h4>{{'home.pricing.monthly' | translate}}</h4>
                                                   <div>29.99</div>
                                              </div>
                                              <div class="price col-4">
-                                                  <h4>Yıllık</h4>
+                                                  <h4>{{'home.pricing.yearly' | translate}}</h4>
                                                   <div>249.99</div>
                                              </div>
                                         </div>
@@ -199,14 +198,14 @@
                          <div class="card col-lg-4">
                               <div class="card-body bg-green cardUpAnime">
                                    <div class="title">
-                                        <h2 class="card-title text-center">Aşırı Gelişmiş Üyelik</h2>
+                                        <h2 class="card-title text-center">{{'home.subscription-headers.extremely-advenced' | translate}}</h2>
                                    </div>
                                    <div class="content">
                                         <ul>
-                                             <li>Gelişmiş Üyelikteki Bütün Özelliklere Ek,</li>
-                                             <li>Görüntülü görüşme seçeneği aktif edilir.</li>
-                                             <li>Chat ekranında fotoğraf paylaşma seçeceği aktif edilir.</li>
-                                             <li>Lokasyon değiştirebilme özelliği aktif edilir. </li>
+                                             <li>{{'home.subscription-body.extAdvenced1' | translate}}</li>
+                                             <li>{{'home.subscription-body.extAdvenced2' | translate}}</li>
+                                             <li>{{'home.subscription-body.extAdvenced3' | translate}}</li>
+                                             <li>{{'home.subscription-body.extAdvenced4' | translate}}</li>
                                         </ul>
                                    </div>
                               </div>
@@ -215,15 +214,15 @@
                                    <div class="card-footer bg-green">
                                         <div class="d-flex align-items-center justify-content-center price-case">
                                              <div class="price col-4">
-                                                  <h4>Haftalık</h4>
+                                                  <h4>{{'home.pricing.weekly' | translate}}</h4>
                                                   <div>13.99</div>
                                              </div>
                                              <div class="price col-4">
-                                                  <h4>Aylık</h4>
+                                                  <h4>{{'home.pricing.monthly' | translate}}</h4>
                                                   <div>42.99</div>
                                              </div>
                                              <div class="price col-4">
-                                                  <h4>Yıllık</h4>
+                                                  <h4>{{'home.pricing.yearly' | translate}}</h4>
                                                   <div>379.99</div>
                                              </div>
                                         </div>

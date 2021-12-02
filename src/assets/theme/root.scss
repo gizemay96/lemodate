@@ -221,6 +221,9 @@ img {
   }
 
   .content {
+    height: 66%;
+    display: flex;
+    align-items: center;
     ul {
       li {
         font-style: normal;

@@ -2,14 +2,14 @@
   <ng-template class="bg-liq" swiperSlide>
     <div class="card-body">
       <div class="header">
-        Standart Üyelik
+        {{'home.subscription-headers.standard' | translate}}
       </div>
-      <div class="body" style="height: 30%;">
+      <div class="body">
         <ul>
-          <li>Anlık sohbete geçmeden önce en az 2 soru yanıtlaman gerekir.</li>
+          <li>{{'home.subscription-body.standard1' | translate}}</li>
         </ul>
-        <div class="pricing-btn" style="top: 57vh;">
-          <button class="btn btn-sm">Ücretsiz</button>
+        <div class="pricing-btn">
+          <button class="btn btn-sm">{{'home.pricing.free' | translate}}</button>
         </div>
       </div>
     </div>
@@ -18,31 +18,30 @@
   <ng-template class="bg-liq" swiperSlide>
     <div class="card-body">
       <div class="header">
-        Gelişmiş Üyelik
+        {{'home.subscription-headers.advenced' | translate}}
       </div>
       <div class="body">
         <ul *ngIf="showingPricingId !== 2" class="zoomIn">
-          <li>Fotoğrafların chat ekranı açılmadan gösterilecek şekilde ayarlanabilir.
-          </li>
-          <li>Sesli görüşme seçeneği aktif edilir.</li>
-          <li>Soruları geç, chat'e geçelim talebi gönderme.</li>
-          <li>Görünmez moduna geçilebilir.</li>
+          <li>{{'home.subscription-body.advenced1' | translate}}</li>
+          <li>{{'home.subscription-body.advenced2' | translate}}</li>
+          <li>{{'home.subscription-body.advenced3' | translate}}</li>
+          <li>{{'home.subscription-body.advenced4' | translate}}</li>
         </ul>
-        <div *ngIf="showingPricingId === 2">
+        <div class="case-pricing" *ngIf="showingPricingId === 2">
           <div class="pricing-info zoomIn">
             <div class="price-case">
               <div class="price-twin price">
-                <h4>Haftalık</h4>
+                <h4>{{'home.pricing.weekly' | translate}}</h4>
                 <div>9.99 ₺</div>
               </div>
               <div class="price-twin price">
-                <h4>Aylık</h4>
+                <h4>{{'home.pricing.monthly' | translate}}</h4>
                 <div>29.99 ₺</div>
               </div>
             </div>
             <div class="price-case">
               <div class="price price-single">
-                <h4>Yıllık</h4>
+                <h4>{{'home.pricing.yearly' | translate}}</h4>
                 <div>249.99 ₺</div>
               </div>
             </div>
@@ -50,7 +49,12 @@
         </div>
         <div class="pricing-btn">
           <button (click)="showingPricingId = showingPricingId === 2 ? 0 : 2" class="btn btn-sm">
-            {{showingPricingId === 2 ? 'close' : 'pricing'}}
+            <span *ngIf="showingPricingId !== 2">
+              {{'home.pricing.pricing' | translate}}
+            </span>
+            <span *ngIf="showingPricingId === 2">
+              {{'general.close' | translate}}
+            </span>
           </button>
         </div>
       </div>
@@ -60,30 +64,30 @@
   <ng-template class="bg-liq" swiperSlide>
     <div class="card-body">
       <div class="header">
-        Aşırı Gelişmiş Üyelik
+        {{'home.subscription-headers.extremely-advenced' | translate}}
       </div>
       <div class="body">
         <ul *ngIf="showingPricingId !== 3" class="zoomIn">
-          <li>Gelişmiş Üyelikteki Bütün Özelliklere Ek,</li>
-          <li>Görüntülü görüşme seçeneği aktif edilir.</li>
-          <li>Chat ekranında fotoğraf paylaşma seçeceği aktif edilir.</li>
-          <li>Lokasyon değiştirebilme özelliği aktif edilir. </li>
+          <li>{{'home.subscription-body.extAdvenced1' | translate}}</li>
+          <li>{{'home.subscription-body.extAdvenced2' | translate}}</li>
+          <li>{{'home.subscription-body.extAdvenced3' | translate}}</li>
+          <li>{{'home.subscription-body.extAdvenced4' | translate}}</li>
         </ul>
-        <div *ngIf="showingPricingId === 3">
+        <div class="case-pricing" *ngIf="showingPricingId === 3">
           <div class="pricing-info zoomIn">
             <div class="price-case">
               <div class="price-twin price">
-                <h4>Haftalık</h4>
+                <h4>{{'home.pricing.weekly' | translate}}</h4>
                 <div>13.99 ₺ </div>
               </div>
               <div class="price-twin price">
-                <h4>Aylık</h4>
+                <h4>{{'home.pricing.monthly' | translate}}</h4>
                 <div>42.99 ₺ </div>
               </div>
             </div>
             <div class="price-case">
               <div class="price price-single">
-                <h4>Yıllık</h4>
+                <h4>{{'home.pricing.yearly' | translate}}</h4>
                 <div>379.99 ₺</div>
               </div>
             </div>
@@ -91,7 +95,12 @@
         </div>
         <div class="pricing-btn">
           <button (click)="showingPricingId = showingPricingId === 3 ? 0 : 3" class="btn btn-sm">
-            {{showingPricingId === 3 ? 'close' : 'pricing'}}
+            <span *ngIf="showingPricingId !== 3">
+              {{'home.pricing.pricing' | translate}}
+            </span>
+            <span *ngIf="showingPricingId === 3">
+              {{'general.close' | translate}}
+            </span>
           </button>
         </div>
       </div>
