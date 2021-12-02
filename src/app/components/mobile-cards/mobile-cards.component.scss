@@ -74,14 +74,19 @@
 
 .pricing-btn {
   width: 100%;
-  display: -webkit-box!important;
-  display: -ms-flexbox!important;
-  display: inline-flex !important;
+  -ms-box-orient: horizontal;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -moz-flex;
+  display: -webkit-flex;
+  display: flex;
   position: absolute;
   justify-content: center;
   padding: 5px 0;
   height: 45vh;
   align-items: end;
+  -webkit-align-items: end;
 
   button {
     background: black;
