@@ -19,7 +19,7 @@
                     <a class="navbar-brand" href="">
                          <img src="../../../assets/images/logo-text.png" class="d-inline-block align-text-top">
                     </a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" 
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
                          data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                          aria-expanded="false" aria-label="Toggle navigation">
                          <img style="width: 40px;" src="../../../assets/icons/nav_toggle.svg" alt="">
@@ -145,7 +145,8 @@
                          <div class="card col-lg-4">
                               <div class="card-body bg-light-yellow cardUpAnime">
                                    <div class="title">
-                                        <h2 class="card-title text-center">{{'home.subscription-headers.standard' | translate}}</h2>
+                                        <h2 class="card-title text-center">{{'home.subscription-headers.standard' |
+                                             translate}}</h2>
                                    </div>
                                    <div class="content p-4 pt-5">
                                         <ul>
@@ -168,7 +169,8 @@
                          <div class="card col-lg-4">
                               <div class="card-body bg-light-green cardUpAnime">
                                    <div class="title">
-                                        <h2 class="card-title text-center">{{'home.subscription-headers.advenced' | translate}}</h2>
+                                        <h2 class="card-title text-center">{{'home.subscription-headers.advenced' |
+                                             translate}}</h2>
                                    </div>
                                    <div class="content p-2 pt-1">
                                         <ul>
@@ -203,7 +205,8 @@
                          <div class="card col-lg-4">
                               <div class="card-body bg-green cardUpAnime">
                                    <div class="title">
-                                        <h2 class="card-title text-center">{{'home.subscription-headers.extremely-advenced' | translate}}</h2>
+                                        <h2 class="card-title text-center">
+                                             {{'home.subscription-headers.extremely-advenced' | translate}}</h2>
                                    </div>
                                    <div class="content">
                                         <ul>
@@ -258,8 +261,9 @@
                               <div class="footer-logo"><img src="../../../assets/images/footer_logo.png" alt=""></div>
                               <div class="frame text-center mt-4"><img src="../../../assets/images/Frame.png" alt="">
                               </div>
-                              <div class="frame text-center mt-4" style="cursor: pointer;"><img
-                                        src="../../../assets/images/googleplay.png" alt="">
+                              <div class="frame text-center mt-4" style="cursor: pointer;">
+                                   <img [src]=" language === 'tr' ? '../../../assets/images/googleplay.png': '../../../assets/images/googleplay_en.png'"
+                                        alt="">
                               </div>
                          </div>
                     </div>
