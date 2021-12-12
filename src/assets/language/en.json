@@ -5,7 +5,7 @@
     "navbar": {
         "about": "About",
         "subscriptions": "Subscriptions",
-        "support": "Support"
+        "support": "Download"
     },
     "home": {
         "about": {
@@ -19,8 +19,8 @@
         },
         "subscription-headers": {
             "standard": "free subscription",
-            "advenced": "silver",
-            "extremely-advenced": "gold"
+            "advenced": "silver subscription",
+            "extremely-advenced": "gold subscription"
         },
         "subscription-body": {
             "standard1": "two answers needed with your perfect match candidate before moving instant chat",
