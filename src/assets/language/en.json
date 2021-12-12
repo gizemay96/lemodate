@@ -1,42 +1,46 @@
 {
-    "general":{
-        "close":"Close"
+    "general": {
+        "close": "Close"
     },
     "navbar": {
         "about": "About",
         "subscriptions": "Subscriptions",
         "support": "Support"
     },
-    "home":{
-        "about":{
-            "perfect-match":"Perfect Match",
-            "video-chat":"Video Chat",
-            "concurrent-questions":"Concurrent Questions"
+    "home": {
+        "about": {
+            "perfect-match": "perfect match",
+            "video-chat": "instant chat",
+            "two-question": "two questions",
+            "two-answer": "two answers",
+            "ninety-second": "time: 90 seconds",
+            "description-1": "catch your perfect match with detailed criterias",
+            "description-2": "instant chat with your perfect match"
         },
-        "subscription-headers":{
-            "standard":"Standard",
-            "advenced":"Advanced",
-            "extremely-advenced":"Extremely Advanced"
+        "subscription-headers": {
+            "standard": "free subscription",
+            "advenced": "silver",
+            "extremely-advenced": "gold"
         },
-        "subscription-body":{
-            "standard1":"It is necessary to answer at least 2 questions before entering the instant chat.",
+        "subscription-body": {
+            "standard1": "two answers needed with your perfect match candidate before moving instant chat",
 
-            "advenced1":"Photos can be set to be displayed without opening the chat screen.",
-            "advenced2":"Voice call option is activated.",
-            "advenced3":"Skip the questions, let's go to the chat, send a request.",
-            "advenced4":"You can switch to invisible mode.",
+            "advenced1": "you may set to show your photos without opening the chat screen",
+            "advenced2": "voice call option may activated",
+            "advenced3": "send a request for skipping the questions and directly moving to instant chat",
+            "advenced4": "invisible mode may activated",
 
-            "extAdvenced1":"Same Advanced Features and",
-            "extAdvenced2":"Video call option is activated.",
-            "extAdvenced3":"Photo sharing option is activated on the chat screen.",
-            "extAdvenced4":"Location change feature is activated."
+            "extAdvenced1": "plus to silver subscription specialities;",
+            "extAdvenced2": "video call option may activated",
+            "extAdvenced3": "you may share any instant photos on the chat screen",
+            "extAdvenced4": "change your location tool  may activated"
         },
-        "pricing":{
-            "weekly":"Weekly",
-            "monthly":"Monthly",
-            "yearly": "Yearly",
-            "free": "Free",
-            "pricing":"Pricing"
+        "pricing": {
+            "weekly": "weekly",
+            "monthly": "monthly",
+            "yearly": "yearly",
+            "free": "free",
+            "pricing": "pricing"
         }
     }
 }

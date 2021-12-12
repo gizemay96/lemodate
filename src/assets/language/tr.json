@@ -9,34 +9,38 @@
     },
     "home":{
         "about":{
-            "perfect-match":"Mükemmel Eşleşme",
-            "video-chat":"Görüntülü Konuşma",
-            "concurrent-questions":"Eşzamanlı Sorular"
+            "perfect-match":"mükemmel eşleşme",
+            "video-chat":"anlık sohbet",
+            "two-question":"iki soru",
+            "two-answer":"iki cevap",
+            "ninety-second":"süre: 90 saniye",
+            "description-1": "kapsamlı eşleşme kriterleri ile mükemmel eşleşme",
+            "description-2": "mükemmel eşleşmen ile anlık sohbet"
         },
         "subscription-headers":{
-            "standard":"Standart Üyelik",
-            "advenced":"Gelişmiş Üyelik",
-            "extremely-advenced":"Aşırı Gelişmiş Üyelik"
+            "standard":"standart üyelik",
+            "advenced":"gelişmiş üyelik",
+            "extremely-advenced":"aşırı gelişmiş üyelik"
         },
         "subscription-body":{
-            "standard1":"Anlık sohbete geçmeden önce en az 2 soru yanıtlaman gerekir.",
+            "standard1":"anlık sohbete geçmeden önce en az 2 soru yanıtlaman gerekir.",
 
-            "advenced1":"Fotoğrafların chat ekranı açılmadan gösterilecek şekilde ayarlanabilir.",
-            "advenced2":"Sesli görüşme seçeneği aktif edilir.",
-            "advenced3":"Soruları geç, chat'e geçelim talebi gönderme.",
-            "advenced4":"Görünmez moduna geçilebilir.",
+            "advenced1":"fotoğrafların sohbet ekranı açılmadan gösterilecek şekilde ayarlanabilir.",
+            "advenced2":"sesli görüşme seçeneği aktif edilebilir.",
+            "advenced3":"soruları geç, sohbete geçelim talebi gönderilebilir.",
+            "advenced4":"görünmez moduna geçilebilir.",
 
-            "extAdvenced1":"Gelişmiş Üyelikteki Bütün Özelliklere Ek,",
-            "extAdvenced2":"Görüntülü görüşme seçeneği aktif edilir.",
-            "extAdvenced3":"Chat ekranında fotoğraf paylaşma seçeceği aktif edilir.",
-            "extAdvenced4":"Lokasyon değiştirebilme özelliği aktif edilir."
+            "extAdvenced1":"gelişmiş üyelikteki özelliklere ek;",
+            "extAdvenced2":"görüntülü görüşme seçeneği aktif edilebilir.",
+            "extAdvenced3":"sohbet ekranında anlık fotoğraf paylaşma seçeneği aktif edilebilir.",
+            "extAdvenced4":"lokasyon değiştirebilme özelliği aktif edilebilir."
         },
         "pricing":{
-            "weekly":"Haftalık",
-            "monthly":"Aylık",
-            "yearly": "Yıllık",
-            "free": "Ücretsiz",
-            "pricing":"Ücretler"
+            "weekly":"haftalık",
+            "monthly":"aylık",
+            "yearly": "yıllık",
+            "free": "ücretsiz",
+            "pricing":"ücretler"
         }
     }
 }
