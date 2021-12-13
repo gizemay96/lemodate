@@ -1,6 +1,7 @@
 @media screen and (max-width: 779px) {
   h1 {
     font-size: 6vw !important;
+    margin: 0;
   }
 
   .navbar-collapse {
@@ -50,10 +51,6 @@
 
   img {
     max-height: 65vh !important;
-  }
-
-  .reversed {
-    flex-direction: column-reverse;
   }
 
   .comp {

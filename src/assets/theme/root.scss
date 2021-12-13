@@ -183,6 +183,7 @@ img {
     height: 66%;
     display: flex;
     align-items: center;
+
     ul {
       li {
         font-style: normal;
@@ -258,5 +259,12 @@ img {
         max-width: 280px;
       }
     }
+  }
+}
+
+
+.reversed {
+  @media screen and (max-width: 767px) {
+    flex-direction: column-reverse;
   }
 }
