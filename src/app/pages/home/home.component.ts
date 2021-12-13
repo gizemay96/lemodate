@@ -15,8 +15,6 @@ import anime from 'animejs';
 })
 export class HomeComponent implements OnInit {
 
-  @ViewChild('subscription') subscription: ElementRef
-
   sections: SectionModel[] = [
     { url: 'home', active: false, pageTop: true },
     { url: 'about', active: false },
@@ -25,10 +23,14 @@ export class HomeComponent implements OnInit {
     { url: 'subscription', active: false },
     { url: 'footer', active: false },
   ];
+
   activeSectionId;
+  closeScrolling = false;
 
   language;
-  closeScrolling = false;
+  deviceInfo;
+
+  // Below fields are for animations
   imgLeftAnim;
   imgRightAnim;
   cardAnim;
@@ -42,7 +44,6 @@ export class HomeComponent implements OnInit {
     autoplay: true,
   };
 
-  deviceInfo;
 
   constructor(private translate: TranslateService,
     private deviceService: DeviceDetectorService,
