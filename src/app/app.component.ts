@@ -11,19 +11,11 @@ export class AppComponent {
 
   constructor(private translate: TranslateService, public router: Router) {
     const lang = window.localStorage.getItem('lang');
-
     if (lang) {
       this.translate.use(lang)
-    } else {
-      window.localStorage.setItem('lang' , 'tr')
+    } else { // set default language
+      window.localStorage.setItem('lang', 'tr')
     }
 
   }
-
-  changeTo(lang: string) {
-    window.localStorage.setItem('lang', lang)
-    this.translate.use(lang)
-  }
-
-
 }
