@@ -18,38 +18,61 @@
   }
 }
 
-.sub-title{
+.sub-title {
   font-weight: 600;
   margin-top: -20px;
   top: -41px;
 }
 
 
-.line-1{
+.line-1 {
   position: relative;
-  top: 50%;  
+  top: 50%;
   width: 10em;
   margin: 0 auto;
-  border-right: 2px solid rgba(255,255,255,.75);
+  border-right: 2px solid rgba(255, 255, 255, 0.664);
   font-size: 190%;
   text-align: center;
   white-space: nowrap;
   overflow: hidden;
   transform: translateY(-50%);
-  height: 25px; 
+  height: 26px;
   color: #81c04b;
 }
 
 /* Animation */
-.anim-typewriter{
-animation: typewriter 4s steps(24) 1s 1 normal both,
-           blinkTextCursor 600ms steps(24) infinite normal;
+.anim-typewriter {
+  animation: typewriter 4s steps(24) 1s 1 normal both,
+    blinkTextCursor 600ms steps(24) infinite normal,
+    closeBorder 5s steps(24) 1s 1 normal both;
 }
-@keyframes typewriter{
-from{width: 0;}
-to{width: 12em;}
+
+@keyframes typewriter {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 12em;
+  }
 }
-@keyframes blinkTextCursor{
-from{border-right-color: rgba(255, 255, 255, 0.404);}
-to{border-right-color: transparent !important;}
+
+@keyframes closeBorder {
+  from {
+    border-right: 2px solid rgba(255, 255, 255, 0.664);
+  }
+
+  to {
+    border-right: 2px solid rgba(255, 255, 255, 0);
+  }
+}
+
+@keyframes blinkTextCursor {
+  from {
+    border-right-color: rgba(255, 255, 255, 0.404);
+  }
+
+  to {
+    border-right: none !important;
+  }
 }

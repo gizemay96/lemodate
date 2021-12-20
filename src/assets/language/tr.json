@@ -1,6 +1,7 @@
 {
     "general":{
-        "close":"Kapat"
+        "close":"Kapat",
+        "coming-soon": "çok yakında sizlerle..."
     },
     "navbar": {
         "about": "Hakkımızda",

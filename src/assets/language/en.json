@@ -1,6 +1,7 @@
 {
     "general": {
-        "close": "Close"
+        "close": "Close",
+        "coming-soon": "with you very soon..."
     },
     "navbar": {
         "about": "About",
