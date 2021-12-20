@@ -25,12 +25,10 @@
         },
         "subscription-body": {
             "standard1": "two answers needed with your perfect match candidate before moving instant chat",
-
             "advenced1": "you may set to show your photos without opening the chat screen",
             "advenced2": "voice call option may activated",
             "advenced3": "send a request for skipping the questions and directly moving to instant chat",
             "advenced4": "invisible mode may activated",
-
             "extAdvenced1": "plus to silver subscription specialities;",
             "extAdvenced2": "video call option may activated",
             "extAdvenced3": "you may share any instant photos on the chat screen",
@@ -42,6 +40,10 @@
             "yearly": "yearly",
             "free": "free",
             "pricing": "pricing"
+        },
+        "footer": {
+            "privacy-policy": "Privacy Policy",
+            "terms-of-us": "Terms of use"
         }
     }
 }

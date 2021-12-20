@@ -1,7 +1,7 @@
 {
     "general":{
         "close":"Kapat",
-        "coming-soon": "çok yakında sizlerle..."
+        "coming-soon": "çok yakında seninle..."
     },
     "navbar": {
         "about": "Hakkımızda",
@@ -42,6 +42,10 @@
             "yearly": "yıllık",
             "free": "ücretsiz",
             "pricing":"ücretler"
+        },
+        "footer": {
+            "privacy-policy": "Kvkk ve Gizlilik Politikası",
+            "terms-of-us": "Kullanım Koşulları"
         }
     }
 }
