@@ -38,7 +38,20 @@
   top: 50%;
   width: 10em;
   margin: 0 auto;
-  border-right: 2px solid rgba(255, 255, 255, 0.664);
+  font-size: 190%;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  transform: translateY(-50%);
+  height: 26px;
+  color: #81c04b;
+}
+
+.line-2 {
+  position: relative;
+  top: 50%;
+  width: 12em;
+  margin: 0 auto;
   font-size: 190%;
   text-align: center;
   white-space: nowrap;
